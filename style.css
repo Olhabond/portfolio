@@ -1,49 +1,47 @@
-* {
-    boox-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
 
-div {
-    width: 50vw;
-    height: 50vh;
-    background: red;
-    font-size: 20px;
-
-}
-
-body {
-    width: 5000px;
-}
-
-p {
-    font-size: 3em;
-}
-
-.first-section {
-    background: blue;
-    margin: 30px;
-    position: absolute;
-}
-
-.layout {
-    width: 300px;
-    height: 300px;
-    background: green;
-    position: relative;
-    top: 200px;
-}
-
-.layout-red {
-    background: red;
-    border: 3px solid yellow;
-    padding: 20px 30px 10px 30px;
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #E5E5E5;
 
 }
 
-.call {
-    width: 150px;
-    height: 150px;
-    background: pink;
-    position: fixed;
-    top: 10px;
-    left: 50px;
+.main-layout{
+    background: #FCFDFD;
+    padding-top: 266px;
+    padding-bottom: 138px;
+}
+
+.main-layout-right{
+    width: 50%;
+    float: left;
+
+}
+
+.main-layout-left{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main-layout-title{
+    font-size: 48px;
+    margin-bottom: 60px;
+
+}
+
+.main-layout-name {
+    font-size: 16px;
+}
+.main-layout-button{
+    width: 224px;
+    background-color: #34547A;
+    color: white;
+    text-align: center;
+    padding: 25px 5px;
+    font-size: 16px;
+
 }
