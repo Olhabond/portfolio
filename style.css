@@ -120,6 +120,24 @@
     height: 250px;
     margin-bottom: 102px;
 }
+
+.item{
+    width: 16.6%;
+    padding-right: 49px;
+    padding-bottom: 100px;
+    float: left;
+}
+
+.item-left{
+    width: 50%;
+    float: left;
+}
+
+.item-right{
+    width: 50%;
+    float: left;
+}
+
 /*40+*/
 .number-item{
     color:#FFFFFF;
@@ -128,7 +146,7 @@
     line-height: 25px;
     padding-top: 103px;
     margin: 0px;
-    /*display: inline-block;*/
+
 }
 /*проектов*/
 .numbers-projects{
@@ -138,14 +156,14 @@
     margin: 0px;
 }
 .image{
-     padding-top:100px;
+     padding-top: 100px;
     padding-right: 20px;
-    float: left;
+    float: right;
 }
-.numbers-item{
+/*.numbers-item{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-}
+}*/
 
 /*Блок мои навыки*/
 .my-skills{
@@ -153,17 +171,21 @@
 }
 
 .my-skills-left{
-    grid-column: span 1;
+    /*grid-column: span 1;*/
      float: left;
     width: 445px;
     height: 257px;
 }
 
+.my-skills-right{
+    float: left;
+}
 .my-image{
-   float: right;
-   width: 555px; 
-   margin-left: 150px;  
-  margin-bottom: 101px;     
+   float: left;
+    width: 555px;
+    margin-left: 150px;
+  margin-bottom: 101px;
+
 }
 
 .skills {
@@ -177,15 +199,24 @@ margin-bottom: 50px;
 font-size: 16px;
 line-height: 26px;
 color: #727272;
-width: 128px;
 margin-bottom: 0px;
 }
 
-.line{
-    background: #34547A;
-    transform: rotate(-0.06deg);
+.progress {
+    width: 100%;
+    background-color: #727272;
+    height: 5px;
+}
+.progress-line{
+    background-color: #34547A;
+    width: 80%;
+    height: 100%;
 }
 
+.my-photo{
+    width: 80%;
+    text-align: center;
+}
 /*Как я работаю*/
 .video{
     overflow: hidden;
@@ -212,7 +243,8 @@ margin-bottom: 0px;
 }
 
 .image-video{
-   width: 1110px;
+   width: 100%;
+    text-align: center;
 }
    
 
@@ -221,14 +253,25 @@ margin-bottom: 0px;
     width: 100%;
     padding-top: 28px;
 }
-
-.image-notes{
-     width: 480px;
-    transition: .2s all;
+.projects-item {
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+.projects-item-books {
+    background-image: url("books.png");
+}
+.projects-item-notes {
+    background-image: url("notes.png");
 }
 
-.image-notes:hover, image-notes:focus{
-    opacity: .65;
+/*.image-notes{
+     width: 480px;
+    transition: .2s all;*/
+
+
+.projects-item:hover{
+    box-shadow: inset 0 0 0 1000px red;
 }
 
 .image-books{
@@ -279,11 +322,11 @@ margin-bottom: 0px;
  .form{
      margin-left: 100px;
  }
-.text{
+.form-text{
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    width: 540px;
+    width: 80%;
     height: 67px;
     color: #727272;
     margin-bottom: 65px;
@@ -325,21 +368,22 @@ margin-bottom: 0px;
 
  .footer{
     background: #34547A;
+     overflow: hidden;
  }
 
  .footer-left{
      width: 50%;
-     position: left;
-     
+     float: left;
  }
 
  .footer-right{
-     position: right;
-    width: 50%;
+     width: 50%;
+     float: left;
+
  }
 
  .logo{
-     position: right;
+     float: left;
     width: 43.75px;
     height: 40px;
  }
@@ -360,3 +404,14 @@ margin-bottom: 0px;
     margin-bottom: 50px;
 
  }
+
+.test {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+@media (max-width: 1000px){
+    .test {
+        background: green;
+    }
+}
