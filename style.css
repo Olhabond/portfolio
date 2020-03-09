@@ -5,8 +5,7 @@
 .container {
     margin: 0 auto;
     width: 80%;
-    background-color: #E5E5E5;
-
+    /*background-color: #E5E5E5;*/
 }
 
 .header {
@@ -15,10 +14,15 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color:#E5E5E5;
+}
+
+.heder-list{
+    margin-left: 0px;
 }
 
 .main-layout{
-    background: #FCFDFD;
+    background: #E5E5E5;
     padding-top: 266px;
     padding-bottom: 138px;
     overflow: hidden;
@@ -38,9 +42,10 @@
 
 .main-layout-title{
     font-size: 48px;
-    margin-bottom: 60px;
     line-height: 79px;
     font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 0px;
 }
 
 .main-layout-name {
@@ -49,6 +54,7 @@
     font-weight: normal;
     font-style: normal;
     color: #727272;
+    margin-bottom: 60px;
 }
 .main-layout-button{
     width: 225px;
@@ -57,13 +63,14 @@
     text-align: center;
     padding: 25px 5px;
     font-size: 16px;
-    margin-bottom: 145px;
+   /* margin-bottom: 145px;*/
+
 }
 .header-logo{
     padding-top: 15px;
     font-size: 48px;
     text-align: left;
-    background-color: #FCFDFD;
+    background-color: #E5E5E5;
     float: left;
     width: 50%;
 }
@@ -73,36 +80,283 @@
     float: left;
     line-height: 26px;
     width: 50%;
+    background-color: #E5E5E5;
 }
 
 .header-link{
+    font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: black;
     text-decoration: none;
     margin-left: 10px;
+    letter-spacing: 0.1em;
+    padding-right: 42px;
+    
 }
 
 .header-link-active{
     color: #34547A;
     text-shadow: 0px 4px 4px rgba(0 0 0 0.25);
-}
+   }
 .about{
-    padding-top: 119px;
+    margin-top: 119px;
     font-size: 32px;
     line-height: 37px;
-    background-color: #F9F9F9;
+    /*background-color:#E5E5E5;*/
     text-align: center;
 }
 
 .about-me{
-    padding-top: 50px;
+   /* padding-top: 50px;*/
     font-size: 16px;
     line-height: 26px;
     color: #727272;
-    background-color: #F9F9F9;
+    margin-bottom: 100px;
+
 }
 .numbers{
     background-color: #34547A;
-
+    height: 250px;
+    margin-bottom: 102px;
 }
+/*40+*/
+.number-item{
+    color:#FFFFFF;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    padding-top: 103px;
+    margin: 0px;
+    /*display: inline-block;*/
+}
+/*проектов*/
+.numbers-projects{
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    margin: 0px;
+}
+.image{
+     padding-top:100px;
+    padding-right: 20px;
+    float: left;
+}
+.numbers-item{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/*Блок мои навыки*/
+.my-skills{
+    overflow: hidden;
+}
+
+.my-skills-left{
+    grid-column: span 1;
+     float: left;
+    width: 445px;
+    height: 257px;
+}
+
+.my-image{
+   float: right;
+   width: 555px; 
+   margin-left: 150px;  
+  margin-bottom: 101px;     
+}
+
+.skills {
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+margin-bottom: 50px;
+}
+
+.photoshop {
+font-size: 16px;
+line-height: 26px;
+color: #727272;
+width: 128px;
+margin-bottom: 0px;
+}
+
+.line{
+    background: #34547A;
+    transform: rotate(-0.06deg);
+}
+
+/*Как я работаю*/
+.video{
+    overflow: hidden;
+    background:#E5E5E5;
+    padding-bottom: 100px;
+}
+
+.work{
+    margin-top: 0px;
+    padding-top: 100px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.work-text{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 57px;
+}
+
+.image-video{
+   width: 1110px;
+}
+   
+
+/*проекты*/
+.projects{
+    width: 100%;
+    padding-top: 28px;
+}
+
+.image-notes{
+     width: 480px;
+    transition: .2s all;
+}
+
+.image-notes:hover, image-notes:focus{
+    opacity: .65;
+}
+
+.image-books{
+    width: 480px;
+    transition: .2s all;
+}
+
+.image-books:hover, image-books:focus{
+    opacity: .65;
+}
+
+.image-notes-link{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.clients{
+    padding-left: 197px;
+}
+
+.microsoft-img{
+    width: 255px;
+    height: 120px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+
+.form-container{
+    margin: 0 auto;
+    width: 45%;
+}
+
+.forms{
+    background: #EEEFF1;
+    margin-top: 0px;
+}
+
+.forms-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+ }
+
+ .form{
+     margin-left: 100px;
+ }
+.text{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    width: 540px;
+    height: 67px;
+    color: #727272;
+    margin-bottom: 65px;
+}
+
+ .forms-name{
+    font-size: 14px;
+    line-height: 23px;
+    color: #5F5D5D;
+    padding-left: 20px;
+    width: 255px;
+    height: 50px;
+    margin-right: 30px;;
+ }
+
+  .message{
+    font-size: 14px;
+    line-height: 23px;
+    color: #5F5D5D;
+    padding-left: 20px;
+    padding-top: 17px;
+    width: 540px;
+    height: 175px;
+    margin-bottom: 50px;
+ }
+
+ button{
+    width: 190px;
+     height: 55px;
+     background: #34547A;
+     font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+    margin-left: 155px;
+ }
+
+ .footer{
+    background: #34547A;
+ }
+
+ .footer-left{
+     width: 50%;
+     position: left;
+     
+ }
+
+ .footer-right{
+     position: right;
+    width: 50%;
+ }
+
+ .logo{
+     position: right;
+    width: 43.75px;
+    height: 40px;
+ }
+ .surname{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-top: 50px;
+    margin-top: 0;
+ }
+
+ .rights{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+
+ }
