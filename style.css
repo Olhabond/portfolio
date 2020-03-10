@@ -5,9 +5,14 @@
 .container {
     margin: 0 auto;
     width: 80%;
-    /*background-color: #E5E5E5;*/
 }
 
+@media (max-width: 1440px) {
+    .container {
+        
+
+    }
+}
 .header {
     overflow: hidden;
     position: fixed;
@@ -17,30 +22,30 @@
     background-color:#E5E5E5;
 }
 
-.heder-list{
+.heder-list {
     margin-left: 0px;
 }
 
-.main-layout{
+.main-layout {
     background: #E5E5E5;
     padding-top: 266px;
     padding-bottom: 138px;
     overflow: hidden;
 }
 
-.main-layout-right{
+.main-layout-right {
     width: 50%;
     float: left;
 
 }
 
-.main-layout-left{
+.main-layout-left {
     width: 50%;
     float: left;
     text-align: center;
 }
 
-.main-layout-title{
+.main-layout-title {
     font-size: 48px;
     line-height: 79px;
     font-weight: 500;
@@ -56,7 +61,7 @@
     color: #727272;
     margin-bottom: 60px;
 }
-.main-layout-button{
+.main-layout-button {
     width: 225px;
     background-color: #34547A;
     color: white;
@@ -66,24 +71,24 @@
    /* margin-bottom: 145px;*/
 
 }
-.header-logo{
+.header-logo {
     padding-top: 15px;
     font-size: 48px;
     text-align: left;
     background-color: #E5E5E5;
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
-.header-nav{
+.header-nav {
     padding-top: 25px;
     float: left;
     line-height: 26px;
-    width: 50%;
+    width: 60%;
     background-color: #E5E5E5;
 }
 
-.header-link{
+.header-link {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -95,33 +100,35 @@
     
 }
 
-.header-link-active{
+.header-link-active {
     color: #34547A;
     text-shadow: 0px 4px 4px rgba(0 0 0 0.25);
    }
-.about{
+
+.about-me-screen {
+    background-color: #F9F9F9;
+}
+.about {
     margin-top: 119px;
     font-size: 32px;
     line-height: 37px;
-    /*background-color:#E5E5E5;*/
     text-align: center;
 }
 
-.about-me{
-   /* padding-top: 50px;*/
+.about-me {
     font-size: 16px;
     line-height: 26px;
     color: #727272;
     margin-bottom: 100px;
 
 }
-.numbers{
+.numbers {
     background-color: #34547A;
     height: 250px;
     margin-bottom: 102px;
 }
 
-.item{
+.item {
     width: 16.6%;
     padding-right: 49px;
     padding-bottom: 100px;
@@ -133,13 +140,13 @@
     float: left;
 }
 
-.item-right{
+.item-right {
     width: 50%;
     float: left;
 }
 
 /*40+*/
-.number-item{
+.number-item {
     color:#FFFFFF;
     font-weight: 500;
     font-size: 21px;
@@ -149,13 +156,13 @@
 
 }
 /*проектов*/
-.numbers-projects{
+.numbers-projects {
     font-size: 16px;
     line-height: 26px;
     color: white;
     margin: 0px;
 }
-.image{
+.image {
      padding-top: 100px;
     padding-right: 20px;
     float: right;
@@ -166,65 +173,66 @@
 }*/
 
 /*Блок мои навыки*/
-.my-skills{
+.my-skills {
     overflow: hidden;
 }
 
 .my-skills-left{
-    /*grid-column: span 1;*/
-     float: left;
-    width: 445px;
+    float: left;
+    width: 30%;
     height: 257px;
-}
+   }
 
-.my-skills-right{
+.my-skills-right {
+    width: 40%;
     float: left;
 }
-.my-image{
-   float: left;
-    width: 555px;
+.my-image {
+    float: left;
+    width: 100%;
     margin-left: 150px;
-  margin-bottom: 101px;
-
+    margin-bottom: 101px;
+    text-align: center;
 }
 
 .skills {
-font-weight: 500;
-font-size: 32px;
-line-height: 37px;
-margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 50px;
 }
 
-.photoshop {
-font-size: 16px;
-line-height: 26px;
-color: #727272;
-margin-bottom: 0px;
+.photoshop-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #727272;
+    margin-bottom: 20px;
 }
 
 .progress {
     width: 100%;
-    background-color: #727272;
+    background-color:#C4C4C4;;
     height: 5px;
 }
-.progress-line{
+.progress-line {
     background-color: #34547A;
     width: 80%;
     height: 100%;
 }
 
-.my-photo{
+.my-photo {
     width: 80%;
     text-align: center;
 }
 /*Как я работаю*/
-.video{
+.video {
     overflow: hidden;
-    background:#E5E5E5;
+    background:#EEEFF1;
     padding-bottom: 100px;
 }
 
-.work{
+.work {
     margin-top: 0px;
     padding-top: 100px;
     font-weight: 500;
@@ -234,7 +242,7 @@ margin-bottom: 0px;
     margin-bottom: 50px; 
 }
 
-.work-text{
+.work-text {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -242,20 +250,21 @@ margin-bottom: 0px;
     margin-bottom: 57px;
 }
 
-.image-video{
+.image-video {
    width: 100%;
     text-align: center;
 }
    
 
 /*проекты*/
-.projects{
+.projects {
+    overflow: hidden;
     width: 100%;
     padding-top: 28px;
 }
 .projects-item {
     width: 25%;
-    height: 300px;
+    height: 480px;
     float: left;
 }
 .projects-item-books {
@@ -270,69 +279,55 @@ margin-bottom: 0px;
     transition: .2s all;*/
 
 
-.projects-item:hover{
-    box-shadow: inset 0 0 0 1000px red;
+.projects-item:hover {
+    box-shadow: inset 0 0 0 1000px rgb(81, 112, 141, 0.7);
 }
 
-.image-books{
-    width: 480px;
-    transition: .2s all;
-}
-
-.image-books:hover, image-books:focus{
-    opacity: .65;
-}
-
-.image-notes-link{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-}
-
-.clients{
+.clients {
     padding-left: 197px;
 }
 
-.microsoft-img{
-    width: 255px;
+.microsoft-img {
+    width: 20%;
     height: 120px;
     padding-left: 30px;
     margin-bottom: 100px;
+    margin-top: 72px;
 }
 
-.form-container{
+.form-container {
     margin: 0 auto;
-    width: 45%;
+    width: 40%;
 }
 
-.forms{
+.forms {
     background: #EEEFF1;
     margin-top: 0px;
 }
 
-.forms-title{
+.forms-title { 
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
  }
 
- .form{
+ .form {
      margin-left: 100px;
  }
-.form-text{
+.form-text {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height: 67px;
     color: #727272;
     margin-bottom: 65px;
 }
 
- .forms-name{
+ .forms-name {
     font-size: 14px;
     line-height: 23px;
     color: #5F5D5D;
@@ -342,7 +337,7 @@ margin-bottom: 0px;
     margin-right: 30px;;
  }
 
-  .message{
+  .message {
     font-size: 14px;
     line-height: 23px;
     color: #5F5D5D;
@@ -353,7 +348,7 @@ margin-bottom: 0px;
     margin-bottom: 50px;
  }
 
- button{
+ button {
     width: 190px;
      height: 55px;
      background: #34547A;
@@ -366,37 +361,41 @@ margin-bottom: 0px;
     margin-left: 155px;
  }
 
- .footer{
+ .footer {
     background: #34547A;
      overflow: hidden;
  }
 
- .footer-left{
-     width: 50%;
+ .footer-left {
+     width: 70%;
      float: left;
  }
 
- .footer-right{
-     width: 50%;
+ .footer-right {
+     width: 30%;
      float: left;
+     padding-top: 56px;
+     padding-left: 200px;
 
  }
 
- .logo{
-     float: left;
+ .logo {
+    float: left;
     width: 43.75px;
     height: 40px;
+    margin-left: 22px;
  }
- .surname{
+ .surname {
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     color: #FFFFFF;
     padding-top: 50px;
     margin-top: 0;
+    margin-bottom: 20px;
  }
 
- .rights{
+ .rights {
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
