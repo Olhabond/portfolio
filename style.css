@@ -5,14 +5,9 @@
 .container {
     margin: 0 auto;
     width: 80%;
+    padding: 0 15px;
 }
 
-@media (max-width: 1440px) {
-    .container {
-        
-
-    }
-}
 .header {
     overflow: hidden;
     position: fixed;
@@ -36,7 +31,6 @@
 .main-layout-right {
     width: 50%;
     float: left;
-
 }
 
 .main-layout-left {
@@ -44,6 +38,7 @@
     float: left;
     text-align: center;
 }
+
 
 .main-layout-title {
     font-size: 48px;
@@ -97,17 +92,17 @@
     margin-left: 10px;
     letter-spacing: 0.1em;
     padding-right: 42px;
-    
 }
 
 .header-link-active {
     color: #34547A;
     text-shadow: 0px 4px 4px rgba(0 0 0 0.25);
-   }
+ }
 
 .about-me-screen {
     background-color: #F9F9F9;
 }
+
 .about {
     margin-top: 119px;
     font-size: 32px;
@@ -181,10 +176,10 @@
     float: left;
     width: 30%;
     height: 257px;
-   }
+}
 
 .my-skills-right {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 .my-image {
@@ -251,8 +246,9 @@
 }
 
 .image-video {
-   width: 100%;
+   width: 70%;
     text-align: center;
+    margin-left: 100px;
 }
    
 
@@ -261,14 +257,18 @@
     overflow: hidden;
     width: 100%;
     padding-top: 28px;
+    
 }
 .projects-item {
     width: 25%;
     height: 480px;
     float: left;
+    background-size: cover;
+    
 }
 .projects-item-books {
     background-image: url("books.png");
+    
 }
 .projects-item-notes {
     background-image: url("notes.png");
@@ -348,7 +348,7 @@
     margin-bottom: 50px;
  }
 
- button {
+ .send {
     width: 190px;
      height: 55px;
      background: #34547A;
@@ -372,10 +372,10 @@
  }
 
  .footer-right {
-     width: 30%;
-     float: left;
-     padding-top: 56px;
-     padding-left: 200px;
+    width: 30%;
+    float: left;
+    padding-top: 56px;
+    padding-left: 150px;
 
  }
 
@@ -401,16 +401,265 @@
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 50px;
-
  }
 
-.test {
-    width: 50px;
-    height: 50px;
-    background: red;
-}
-@media (max-width: 1000px){
-    .test {
-        background: green;
+/* Медиа-запросы*/
+
+@media (max-width: 1700px){
+    .header-link {
+        font-size: 12px;
+    }
+    .main-layout {
+        padding-top: 245px;
+        padding-bottom: 100px;
+    } 
+    .main-layout-title {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+    .about { 
+        margin-top: 80px;
+    }
+    .microsoft-img {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .forms-title {
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+    .projects-item {
+        height: 300px;
+    }
+    .form-text {
+        margin-bottom: 50px;
+    }
+    .forms-name {
+        margin-top: 20px;
+    }
+    .message {
+        width: 80%;
+    }
+    .send {
+        margin-left: 100px;
+    }
+    .footer-right {
+        padding-left: 100px;
+        padding-top: 30px;
+    }
+     .surname {
+         padding-top: 30px;
     }
 }
+
+@media (max-width: 1394px) {
+    .header-logo {
+        width: 20%;
+    }
+    .header-nav {
+        width: 80%;
+    }
+    .header-list {
+        padding-left: 0;
+    }
+    .main-layout-left-laptop {
+        width: 80%;
+    }
+    .main-layout-title {
+        line-height: 1;
+    }
+
+    .main-layout-name {
+        margin-bottom: 40px;
+    }
+    .main-layout-button {
+        width: 40%;
+        font-size: 14px;
+    }
+    .numbers {
+        height: 200px;
+        margin-bottom: 80px;
+    }
+    .image {
+        padding-top: 80px;
+    }
+    .number-item {
+        font-size: 18px;
+        padding-top: 80px;
+    }
+    .numbers-projects {
+        font-size: 14px;
+    }
+    .work {
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+    .image-video {
+        width: 70% ;
+    }
+    .projects-item {
+        height: 250px;
+    }
+    .send {
+        margin-left: 20px;
+    }
+    .logo  {
+        height: 30px;
+        width: 38px;
+    }
+    .footer-right {
+        width: 40%;
+    }
+    .footer-left {
+        width: 60%;
+    }
+    .surname {
+        font-size: 18px;
+    }
+} 
+@media (max-width: 955px) {
+
+    .header-logo {
+        width: 15%;
+    }
+    .header-nav {
+        width: 85%;
+    }
+    .header-list {
+        padding-left: 0;
+    }
+    .main-layout-title {
+        font-size: 36px;
+    }
+    .main-layout-button {
+        font-size: 12px;
+        padding: 18px 5px;
+    }
+    .main-layout-name {
+        font-size: 14px;
+    }
+    .main-layout {
+        padding-bottom: 80px;
+    }
+    .numbers {
+        margin-bottom: 60px;
+    }
+    .microsoft-img {
+        height: 100px;
+    }
+    .footer-right {
+        width: 50%;
+    }
+    .footer-left {
+        width: 50%;
+    }
+    .surname {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .rights {
+        font-size: 10px;
+        margin-bottom: 40px;
+    }
+    .logo {
+        height: 26px;
+        width: 32px;
+        margin-left: 16px;
+    }
+}
+@media (max-width: 770px) {
+    .header-link {
+         font-size: 10px;   
+         padding-right: 20px;
+    }
+    .main-layout {
+        padding-top: 200px;
+    }
+    .numbers {
+        height: 180px;
+    }
+  
+   .item {
+       padding-right: 15px;
+   }
+   .image {
+       padding-top: 60px;
+       padding-right: 5px;
+   }
+   .number-item {
+       font-size: 16px;
+       padding-top: 60px;
+   }
+   .numbers-projects {
+       font-size: 12px;
+   }
+   .numbers {
+       margin-bottom: 50px;
+   }
+  
+   .skills {
+       margin-bottom: 20px;
+       margin-top: 20px;
+       font-size: 26px;
+   }
+   .photoshop-text {
+       margin-top: 10px;
+       margin-bottom: 16px;
+       font-size: 14px;
+   }
+   .work {
+       padding-top: 30px;
+       font-size: 28px;
+   }
+   .work-text {
+       font-size: 14px;
+   }
+   .video {
+       padding-bottom: 70px;
+   }
+   .projects-item {
+       height: 200px;
+   }
+   .clients {
+       padding-left: 100px;
+    
+    }
+    .microsoft-img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .forms-title {
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+    .form-container {
+        width: 70%;
+    }
+    .form-text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .forms-name {
+        font-size: 12px;
+        height: 36px;
+    }
+    .message {
+        font-size: 12px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    .send {
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 400px) {
+    .main-layout {
+        padding-top: 130px;
+    }
+    }
+
+}
+
+    
